@@ -1,4 +1,4 @@
-FROM registry.stage.redhat.io/ubi8/ubi-minimal:8.10
+FROM quay.io/mmondics/node:erbium-alpine
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
