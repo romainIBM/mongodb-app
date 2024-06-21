@@ -1,7 +1,7 @@
 FROM quay.io/mmondics/node:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-CMD npm cache clean -f
+CMD npm install -g npm@10.8.1
 COPY package.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app
