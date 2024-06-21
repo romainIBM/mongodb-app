@@ -1,8 +1,7 @@
-FROM quay.io/mmondics/node:latest
+FROM docker.io/s390x/node:hydrogen-bullseye-slim
 USER root
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-CMD npm install -g npm@10.8.1
 COPY package.json /usr/src/app/
 USER node
 WORKDIR /usr/src/app
