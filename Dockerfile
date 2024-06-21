@@ -1,4 +1,4 @@
-FROM s390x/node:hydrogen-bullseye-slim
+FROM s390x/node
 USER root
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
